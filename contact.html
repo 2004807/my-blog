@@ -1,89 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>My blog </title>
-        <meta name="travelling registration site">
+<head>
+    <meta charset="utf-8">
+    <title>Log In</title>
+    <meta name="description" content="Travelling registration site.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
 
+        h1 {
+            color: #003366;
+        }
 
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
 
-    </head>
-    <body>
-        <header><h1>SAFARY for travelling</h1></header>
-        <h2>DAHAB</h2>
-        <h3><address>by john </address><time>march 1 ,2025</time></h3>
-<p>one of the most beutifal places in Egypt </p>
-<img src="download.jpeg" alt="dahab photo">
-<p>for more details </p>
-<a target="_blank"  href="https://www.google.com/">click here</a>
-<ul>
-    <li>day use</li>
-    <li>camp </li>
-    <li>one week</li>
-</ul>
-        <h2>AIN SOKHNA</h2>
-        <h3><address>by smith </address><time>april 1 ,2025</time></h3>
-        <p>great decision for winter vacation  </p>
-        <img src="licensed-image.jpeg" alt="see view">
-        <p>for more details </p>
-        <a target="_blank" href="https://www.google.com">click here</a>
+        label {
+            display: block;
+            margin-top: 15px;
+        }
 
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
-        <h3>HURGHADA</h3>
-        <h3><address>by alex </address><time>may 1 ,2025</time></h3>
-        <p>new exprience in red see </p>
-<img src="licensed-image (1).jpeg" alt="hurghada photo">
-<p>for more details </p>
-<a target="_blank" href="https://www.google.com">click here</a>
-<br>
-<p><h1>contact us </h1></p>
-<form>
-   <div>
-    <label for="txt" >user name</label>
-    <input id="txt" type="text" required>
-   </div>
-    <div>
-        <label for="email">email</label>
-    <input id="email" type="email"required>
-    </div>
-    <div>
-        <label for="txt">message </label>
-        <input id="txt" type="text"required>
-    </div>
-<div>
-    <input type="submit" value="send message">
+        .submit-button {
+            margin-top: 20px;
+            text-align: center;
+        }
 
-</div>
+        .submit-button input {
+            background-color: #0059b3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
+        .submit-button input:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
 
-</form>
-<br>
-<header><h1> Contact information</h1> </header>
-<table>
-    <tr>
-        <th>Day</th>
-        <th>openning Time </th>
-        <th>Closing Time</th>
-    </tr>
-    <tr>
-        <td>Sunday</td>
-        <td>10AM</td>
-        <td>9PM</td>
-    </tr>
-    <tr>
-        <td>Monday</td>
-        <td>11AM</td>
-        <td>10PM</td>
-    </tr>
-    <tr>
-        <td>Tuesday</td>
-        <td>11AM</td>
-        <td>8PM</td>
-    </tr>
-    
-</table>
-<p>for more information you can email us at </p>
-<a href="safary@gmail.com">mail</a>
+    <h1>Contact Us</h1>
+    <form>
+        <div class="contact-form">
+            <label for="username">User Name</label>
+            <input id="username" type="text" required>
 
-    </body>
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+
+            <label for="message">Message</label>
+            <input id="message" type="text" required>
+        </div>
+
+        <div class="submit-button">
+            <input type="submit" value="Send Message">
+        </div>
+    </form>
+
+</body>
 </html>
